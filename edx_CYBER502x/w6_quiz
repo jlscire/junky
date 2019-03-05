@@ -23,11 +23,11 @@ SOFTWARE
 *SYSTEM
 
 Unit 6: Question 4
-In a FAT file system, where does a file’s first/starting cluster address reside?
-FAT table
-The file’s content
-The file’s header
-*A directory entry in the file’s parent directory
+The Bitmap metafile from the NTFS volume is used to:
+Store the bmp file
+*keep track of cluster usage
+find the starting cluster
+find the chain of clusters
 
 Unit 6: Question 5
 Which data structure is used as a lookup table to see which cluster comes next in a FAT file system?
@@ -45,11 +45,12 @@ NTFS uses 64 bits for defining a cluster.
 NTFS stores permissions for each file and directory.
 
 Unit 6: Question 7
-Which of these formatting processes will zero out both the root directory entries and the file allocation table entries only? Since this type of formatting process doesn't touch the data area, it does not sanitize disks completely.
-Full format
-*Quick format
-Half format
-Efficient format
+In FAT 12, how many bytes does each directory-entry use to define a file or subdirectory in a directory?
+4
+12
+16
+*32
+It varies
 
 Unit 6: Question 8
 Which registry file can be used to identify the user who last logged into the system?
@@ -62,7 +63,7 @@ SYSTEM
 Unit 6: Question 9
 In a Windows NTFS file system, which of the following file stores its data content inside its Master File Table (MFT) record?
 $MFT
-A file whose file size is 10 bytes.
+*A file whose file size is 10 bytes.
 A file whose files size is 10 kilobytes
 Page file
 
